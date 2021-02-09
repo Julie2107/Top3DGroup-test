@@ -12,9 +12,9 @@ body {
   background-color: $white;
   color: $black;
   font-family: $main-font;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
   margin: 0;
   padding: 0;
 }
@@ -25,4 +25,28 @@ img {
 
 a {
   text-decoration: none;
+}
+
+/* Этот блок используется для того, чтобы доступно прятать контент на странице. */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  width: 1px;
+}
+
+/*выравнивание контента по направляющим */
+.container {
+  margin: 0 auto;
+  //width: $sm;
+
+  @media (min-width: $md) {
+    max-width: $md;
+  }
+
+  @media (min-width: $xl) {
+    max-width: $xl;
+  }
 }

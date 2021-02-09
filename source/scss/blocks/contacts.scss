@@ -1,0 +1,33 @@
+.contacts {
+  background-color: $gold;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+
+  a {
+    color: black;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.contacts__city {
+  display: block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
