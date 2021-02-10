@@ -1,0 +1,29 @@
+.videos {
+  background-color: $back-grey;
+  margin: 12px auto 70px;
+  padding: 70px 0;
+
+  @media (min-width: $md) {
+    max-width: $md;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 1440px;
+  }
+
+}
+.videos__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: $sf-pro-display;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 400;
+  color: $text-black;
+}
+
+.videos__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
