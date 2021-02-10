@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Этот блок используется для того, чтобы доступно прятать контент на странице. */
 
 .visually-hidden {

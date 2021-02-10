@@ -1,5 +1,6 @@
 .contacts {
   background-color: $gold;
+  padding: 7px 0;
 
   .container {
     display: flex;
@@ -21,13 +22,42 @@
   }
 }
 
+.contacts__main,
+.contacts__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > * {
+    margin-right: 20px;
+  }
+}
+
 .contacts__city {
   display: block;
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+
+  font-weight: inherit;
 }
 
+.contacts__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.contacts__item {
+  padding-right: 20px;
 
+  &:last-child {
+    padding-right: 0;
+  }
+}

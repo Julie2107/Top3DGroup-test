@@ -1,0 +1,160 @@
+.nav {
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(189, 189, 189, 0.35);
+}
+
+.nav__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 13px;
+  > *:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.nav__logo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.nav__logo-image {
+  margin-right: 16px;
+}
+
+.nav__title {
+  width: 133px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+}
+
+.nav__title-marked {
+  color: #F60007;
+}
+
+.nav__rating {
+  width: 105px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 5px 12px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+
+.nav__search {
+  position: relative;
+}
+
+.nav__search-button {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 75px;
+  height: 36px;
+  right: 4px;
+  top: 4px;
+
+  background-color: white;
+  border: 2px solid $button-red;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  color: $button-red;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.nav__search-input {
+  width: 521px;
+  height: 44px;
+  padding: 13px 16px;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9E9E9E;
+  }
+}
+
+.user-menu__login-button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: $text-black;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    color: $button-red;
+  }
+}
+
+.user-menu__cart-button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  height: 36px;
+  padding: 6px 16px;
+  background-color: $button-red;
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.nav__options-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__options-link {
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: $button-red;
+  }
+}
