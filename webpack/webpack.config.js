@@ -30,6 +30,7 @@ function generateHtmlPlugins(templateDir) {
       filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
       inject: true,
+      minify: false,
     });
   });
 }
@@ -104,6 +105,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'source/html/views/index.html',
+      minify: false,
     }),
     new PreloadWebpackPlugin({
       rel: 'preload',
