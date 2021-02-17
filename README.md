@@ -1,5 +1,7 @@
 <h1 align="center">Тестовое задание для Top 3D Group</h1>
 
+<p> Deploy: <a href="https://fervent-villani-f4f1be.netlify.app/">https://fervent-villani-f4f1be.netlify.app/</a>
+
 <p>Тестовое задание на позицию Frontend-разработчик</p>
 <p>
   Использованные технологии:
