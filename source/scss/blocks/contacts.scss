@@ -44,6 +44,28 @@
   font-weight: inherit;
 }
 
+.contacts__workschedule,
+.contacts__contact {
+  display: none;
+
+  @media (min-width: $md) {
+    display: flex;
+  }
+}
+
+.contacts__contact {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__tel {
+  margin-right: 0;
+
+  @media (min-width: $md) {
+    margin-right: 20px;
+  }
+}
+
 .contacts__list {
   display: flex;
   flex-wrap: nowrap;

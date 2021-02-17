@@ -1,13 +1,15 @@
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
-
-const videoSlider = document.querySelector('.swiper-container');
-
-let videoSwiper = new Swiper(videoSlider, {
+const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
-  slidesPerView: 2,
+  spaceBetween: 10,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 1.9,
+    },
   },
 });
