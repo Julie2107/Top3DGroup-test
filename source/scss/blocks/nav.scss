@@ -3,11 +3,12 @@
   border-bottom: 1px solid rgba(189, 189, 189, 0.35);
 
   @media (min-width: $md) {
-    padding: 22px 0;
+    padding: 16px 0 22px;
   }
 
   & .container {
     position: relative;
+    padding: 0 14px;
   }
 }
 
